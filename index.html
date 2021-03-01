@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SortingVisualizer</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Sorting Visualizer</h1>
+        <div class="sorts">
+            <h1 id="Button" onclick = "{Visualize_Sort('Merge')}">Merge</h1>
+            <h1 id="Button" onclick = "{Visualize_Sort('Bubble')}">Bubble</h1>
+            <h1 id="Button" onclick = "{Visualize_Sort('Insertion')}">Insertion</h1>
+            <h1 id="Button" onclick = "{Visualize_Sort('Quick')}">Quick</h1>
+            <h1 id="Button" onclick = "{Visualize_Sort('Selection')}">Selection</h1>
+            <h1 id="Button" onclick = "Update_Set()">Reset</h1>
+        </div>
+        <div class="controls">
+            <div class="container">
+                <p>size</p>
+                <input type = "range" min="10" max="200" value = "50" class = "slider" id= "arraysize">
+            </div>
+            <div class="container">
+                <p>speed</p>
+                <input type = "range" min="10" max="200" value = "50" class = "slider" id= "speed">
+            </div>
+        </div>
+        <div class="colors">
+            <div class="container">
+                <p>Start Color</p>
+            </div>
+            <div class="container">
+                <p>End Color</p>
+            </div>
+        </div>
+    </div>
+    <div id="visualizer">
+    </div>
+    <script src="main_app.js"></script>
+    <script src="sorting_algorithms/Bubble.js"></script>
+    <script src="sorting_algorithms/Insertion.js"></script>
+    <script src="sorting_algorithms/Merge.js"></script>
+    <script src="sorting_algorithms/Selection.js"></script>
+    <script src="sorting_algorithms/Quick.js"></script>
+</body>
+</html>
